@@ -10,7 +10,7 @@ const EmployeeList = () => {
   const employeesPerPage = 6;
 
   useEffect(() => {
-    fetch("http://localhost:5000/employees")
+    fetch("https://employee-management-8r9s.onrender.com//employees")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched Employees:", data); // Debugging

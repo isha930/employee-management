@@ -32,7 +32,7 @@ const AddEmployee = ({ onEmployeeAdded }) => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/employees", {
+      const response = await fetch("https://employee-management-8r9s.onrender.com//employees", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(employee),
