@@ -57,6 +57,8 @@ app.post("/api/signup", (req, res) => {
 // ✅ Login Route
 app.post("/api/login", (req, res) => {
   const { email, password } = req.body;
+  console.log("Received body:", req.body);
+    res.json({ message: "Login route hit!" });
 
   const user = users.find((user) => user.email === email && user.password === password);
   if (!user) {
